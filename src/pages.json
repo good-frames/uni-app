@@ -1,0 +1,101 @@
+{
+	"pages": [
+		{
+			"path": "models/main/pages/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "models/main/pages/goods",
+			"style": {
+				"navigationBarTitleText": "商品列表"
+			}
+		},
+		{
+			"path": "models/main/pages/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "models/main/pages/mine",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "models/goods",
+			"pages": []
+		},
+		{
+			"root": "models/common",
+			"pages": [{
+				"path": "pages/webview",
+				"style": {
+					"navigationBarTitleText": "浏览网页"
+				}
+			}, {
+				"path": "pages/textview",
+				"style": {
+					"navigationBarTitleText": "浏览文本"
+				}
+			}]
+		}
+	],
+	"tabBar": {
+		"color": "#515151",
+		"selectedColor": "#333",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "models/main/pages/home",
+				"iconPath": "static/images/tabbar/home.png",
+				"selectedIconPath": "static/images/tabbar/home_active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "models/main/pages/goods",
+				"iconPath": "static/images/tabbar/map.png",
+				"selectedIconPath": "static/images/tabbar/map_active.png",
+				"text": "商品分类"
+			},
+			{
+				"pagePath": "models/main/pages/cart",
+				"iconPath": "static/images/tabbar/map.png",
+				"selectedIconPath": "static/images/tabbar/map_active.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "models/main/pages/mine",
+				"iconPath": "static/images/tabbar/mine.png",
+				"selectedIconPath": "static/images/tabbar/mine_active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^custom-(.*)": "@/components/custom-$1/index.vue",
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "商品详情页",
+			"path": "models/goods/pages/detail",
+			"query": ""
+		}]
+	}
+}

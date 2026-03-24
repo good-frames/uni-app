@@ -1,0 +1,5 @@
+import uni from '@dcloudio/vite-plugin-uni'
+
+export default function createUni() {
+  return uni()
+}
