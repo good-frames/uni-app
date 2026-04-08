@@ -9,7 +9,7 @@ const loginPage = "/models/main/pages/login"
 const whiteList = [
 	'/models/main/pages/home',
 	'/models/main/pages/login',
-	// '/models/common/pages/webview',
+	'/models/common/pages/webview',
 ]
 
 // 需要权限的路由
